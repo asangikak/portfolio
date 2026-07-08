@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer & Consultant | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">Data<span>Craft</span></a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#consulting">Consulting</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact" class="btn-nav">Hire Me</a></li>
+            <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1>Building Scalable <span class="highlight">Data Pipelines</span> & Architectures</h1>
+        <p>Data Engineer & Consultant helping businesses optimize data infrastructure, reduce cloud spend, and unlock actionable insights.</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <a href="#consulting" class="btn secondary-btn">Book a Consultation</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <p>Hello! I am a passionate Data Engineer specializing in designing, implementing, and monitoring robust data processing systems. Whether working with massive distributed systems or optimizing legacy ETL pipelines, I focus on delivering reliability and performance.</p>
+            <p>As a consultant, I bridge the gap between technical infrastructure and business strategy—ensuring your data works explicitly to boost your bottom line.</p>
+            <a href="assets/resume.pdf" class="btn secondary-btn" target="_blank"><i class="fas fa-file-download"></i> Download Resume</a>
+        </div>
+        <div class="about-stat-card">
+            <h3>The Snapshot</h3>
+            <ul>
+                <li><strong>X+ Years</strong> Industry Experience</li>
+                <li><strong>Y+ TB</strong> Data Managed Daily</li>
+                <li><strong>Z+ Cloud Costs</strong> Reduced for Clients</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="grid-3">
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Real-time Streaming Pipeline</h3>
+            <p>Built a real-time event ingestion pipeline processing 10k+ events/sec using Kafka, Spark Streaming, and Delta Lake.</p>
+            <div class="tags">
+                <span>Kafka</span><span>Spark</span><span>AWS</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>Enterprise Data Warehouse Migration</h3>
+            <p>Migrated legacy on-premise SQL servers to Snowflake, rewriting 200+ ETL workflows using dbt and Airflow.</p>
+            <div class="tags">
+                <span>Snowflake</span><span>dbt</span><span>Airflow</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
+            <h3>Cloud FinOps Optimization Engine</h3>
+            <p>Engineered automated resource-tagging and idle-resource shutdown scripts saving 32% on monthly BigQuery spend.</p>
+            <div class="tags">
+                <span>GCP</span><span>BigQuery</span><span>Python</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="case-studies" class="container">
+    <h2 class="section-title">Client Case Studies</h2>
+    <div class="case-study-layout">
+        <div class="case-card">
+            <div class="case-meta">E-Commerce Architecture Scaled up to 5x Load</div>
+            <h3>Overhauling Data Pipelines for Peak Holiday Traffic</h3>
+            <p><strong>The Challenge:</strong> A major retailer's legacy analytical server crashed repeatedly during high-traffic sales events, dropping vital conversion metrics.</p>
+            <p><strong>The Solution:</strong> Implemented decoupled storage and compute scaling via a lakehouse architecture. Replaced batch syncs with incremental micro-batches.</p>
+            <p><strong>The Result:</strong> Zero downtime during Black Friday, and analytical reporting latency dropped from 12 hours to less than 15 minutes.</p>
+        </div>
+    </div>
+</section>
+
+<section id="consulting" class="container">
+    <h2 class="section-title">Consulting Services</h2>
+    <div class="grid-3">
+        <div class="service-card">
+            <h3>Data Infrastructure Audit</h3>
+            <p>Deep-dive review of your cloud data footprint to isolate performance bottlenecks and structural architectural flaws.</p>
+        </div>
+        <div class="service-card">
+            <h3>Cost Optimization</h3>
+            <p>Stop overpaying for compute. I help configure smart indexing, partitioning, and warehousing structures to cut your bills down drastically.</p>
+        </div>
+        <div class="service-card">
+            <h3>Custom ETL/ELT Design</h3>
+            <p>End-to-end design of tailored pipelines ensuring high data quality, seamless governance, and clean schema registries.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="container">
+    <h2 class="section-title">Skills & Certifications</h2>
+    <div class="skills-wrapper">
+        <div class="skill-group">
+            <h3>Languages & Frameworks</h3>
+            <div class="tags">
+                <span>Python</span><span>SQL</span><span>Scala</span><span>Apache Spark</span><span>dbt</span><span>Kafka</span><span>Airflow</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h3>Cloud & Databases</h3>
+            <div class="tags">
+                <span>AWS</span><span>GCP</span><span>Snowflake</span><span>PostgreSQL</span><span>BigQuery</span><span>Databricks</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h3>Certifications</h3>
+            <div class="tags certs">
+                <span><i class="fas fa-certificate"></i> AWS Certified Data Engineer</span>
+                <span><i class="fas fa-certificate"></i> Databricks Certified Professional</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h2 class="section-title">Let's Build Something Together</h2>
+    <p>Looking for a reliable contractor, or have a critical engineering vacancy to fill? Reach out below.</p>
+
+    <form id="contact-form" action="#" method="POST" class="contact-form">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email Address" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Tell me about your project needs..." required></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+    </form>
+
+    <div class="social-links">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 DataCraft Consulting. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
