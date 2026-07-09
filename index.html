@@ -11,19 +11,21 @@
 
 <nav class="navbar">
     <div class="nav-container">
-        <a href="#home" class="logo">Data<span>Craft</span></a>
+        <a href="#home" class="logo">Asangika<span> Kuruppu</span></a>
         <button class="menu-toggle" aria-label="Toggle Menu">
             <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#consulting">Consulting</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#case-studies">Case Studies</a></li>
-            <li><a href="#consulting">Consulting</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact" class="btn-nav">Hire Me</a></li>
-            <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button></li>
+            <li>
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+            </li>
         </ul>
     </div>
 </nav>
@@ -31,7 +33,8 @@
 <section id="home" class="hero-section">
     <div class="hero-content">
         <h1>Building Scalable <span class="highlight">Data Pipelines</span> & Architectures</h1>
-        <p>Data Engineer & Consultant helping businesses optimize data infrastructure, reduce cloud spend, and unlock actionable insights.</p>
+        <p>Data Engineer & Consultant helping businesses optimize data infrastructure, reduce cloud spend, and unlock
+            actionable insights.</p>
         <div class="hero-cta">
             <a href="#projects" class="btn primary-btn">View My Work</a>
             <a href="#consulting" class="btn secondary-btn">Book a Consultation</a>
@@ -43,18 +46,67 @@
     <h2 class="section-title">About Me</h2>
     <div class="about-grid">
         <div class="about-text">
-            <p>Hello! I am a passionate Data Engineer specializing in designing, implementing, and monitoring robust data processing systems. Whether working with massive distributed systems or optimizing legacy ETL pipelines, I focus on delivering reliability and performance.</p>
-            <p>As a consultant, I bridge the gap between technical infrastructure and business strategy—ensuring your data works explicitly to boost your bottom line.</p>
-            <a href="assets/resume.pdf" class="btn secondary-btn" target="_blank"><i class="fas fa-file-download"></i> Download Resume</a>
+            <p>Hello! I am a passionate Data Engineer specializing in designing, implementing, and monitoring robust
+                data processing systems. </p>
+            <!--        <p> Whether working with massive distributed systems or optimizing legacy ETL pipelines, I focus on delivering reliability and performance.</p>-->
+            <p>As a consultant, I bridge the gap between technical infrastructure and business strategy—ensuring your
+                data works explicitly to boost your bottom line.</p>
+            <p>I have analyzed data in <STRONG> Pharmaceutical & Healthcare </STRONG> domains. Previously gained
+                valuable experience building software in <strong>Healthcare, Banking & Insurance </strong> Domains.</p>
+<!--            <a href="assets/resume.pdf" class="btn secondary-btn" target="_blank"><i class="fas fa-file-download"></i>-->
+<!--                Download Resume</a>-->
         </div>
         <div class="about-stat-card">
             <h3>The Snapshot</h3>
             <ul>
-                <li><strong>X+ Years</strong> Industry Experience</li>
-                <li><strong>Y+ TB</strong> Data Managed Daily</li>
-                <li><strong>Z+ Cloud Costs</strong> Reduced for Clients</li>
+                <li><strong>10+ Years</strong> Industry Experience</li>
+                <li><strong>20 GB</strong> Data Managed Daily</li>
+                <!--                <li><strong>+ AWS Cloud Costs</strong> Reduced for Clients</li>-->
             </ul>
         </div>
+    </div>
+</section>
+
+<section id="consulting" class="container">
+    <h2 class="section-title">
+        How I Can Help
+    </h2>
+    <p class="section-intro">
+        I help businesses simplify operations, improve decision-making, and unlock the value of their
+        data through modern Data Engineering, and AI.
+    </p>
+
+    <div class="grid-3">
+        <div class="service-card">
+            <h3>Data Engineering</h3>
+            <p>
+                Build reliable data platforms that collect,
+                organize, and prepare business data for reporting,
+                analytics, and decision making.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>AI Solutions</h3>
+            <p>
+                Identify practical AI opportunities,
+                automate repetitive work,
+                and build intelligent applications that improve productivity.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Automation & Integration</h3>
+            <p>
+                Connect systems,
+                automate manual processes,
+                and eliminate repetitive work so teams can focus on higher-value tasks.
+            </p>
+        </div>
+    </div>
+
+    <div class="tags">
+        <span>Intelligent Automation</span><span>Better Reports</span><span>Lower Costs</span><span>Faster Processes</span>
     </div>
 </section>
 
@@ -63,26 +115,23 @@
     <div class="grid-3">
         <div class="card">
             <div class="card-icon"><i class="fas fa-network-wired"></i></div>
-            <h3>Real-time Streaming Pipeline</h3>
-            <p>Built a real-time event ingestion pipeline processing 10k+ events/sec using Kafka, Spark Streaming, and Delta Lake.</p>
+            <h3>Multi-Region CDC & Batch Analytics Pipeline</h3>
+            <p>Maintained and optimized a multi-region AWS Batch pipeline processing 20GB of historical and CDC data via
+                AWS DMS. Architected cost-effective ingestion workflows and delivered automated report generation using
+                AWS Athena and QuickSight.</p>
             <div class="tags">
-                <span>Kafka</span><span>Spark</span><span>AWS</span>
+                <span>AWS DMS</span>
+                <span>AWS Batch</span><span>Athena</span><span>QuickSight</span><span>Multi-Region</span>
             </div>
         </div>
         <div class="card">
-            <div class="card-icon"><i class="fas fa-database"></i></div>
-            <h3>Enterprise Data Warehouse Migration</h3>
-            <p>Migrated legacy on-premise SQL servers to Snowflake, rewriting 200+ ETL workflows using dbt and Airflow.</p>
+            <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Predictive AAC Companion App</h3>
+            <p>Developed a localized Augmentative and Alternative Communication (AAC) companion app for individuals with
+                autism. Built an offline, local bigram engine trained on sample sentences to provide next-word
+                predictions for a 200-word vocabulary, and integrated external APIs for cloud-based Text-to-Speech.</p>
             <div class="tags">
-                <span>Snowflake</span><span>dbt</span><span>Airflow</span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
-            <h3>Cloud FinOps Optimization Engine</h3>
-            <p>Engineered automated resource-tagging and idle-resource shutdown scripts saving 32% on monthly BigQuery spend.</p>
-            <div class="tags">
-                <span>GCP</span><span>BigQuery</span><span>Python</span>
+                <span>AAC</span><span>Offline NLP</span><span>Bigram Model</span><span>TTS API</span><span>Clean Architecture</span>
             </div>
         </div>
     </div>
@@ -92,29 +141,7 @@
     <h2 class="section-title">Client Case Studies</h2>
     <div class="case-study-layout">
         <div class="case-card">
-            <div class="case-meta">E-Commerce Architecture Scaled up to 5x Load</div>
-            <h3>Overhauling Data Pipelines for Peak Holiday Traffic</h3>
-            <p><strong>The Challenge:</strong> A major retailer's legacy analytical server crashed repeatedly during high-traffic sales events, dropping vital conversion metrics.</p>
-            <p><strong>The Solution:</strong> Implemented decoupled storage and compute scaling via a lakehouse architecture. Replaced batch syncs with incremental micro-batches.</p>
-            <p><strong>The Result:</strong> Zero downtime during Black Friday, and analytical reporting latency dropped from 12 hours to less than 15 minutes.</p>
-        </div>
-    </div>
-</section>
-
-<section id="consulting" class="container">
-    <h2 class="section-title">Consulting Services</h2>
-    <div class="grid-3">
-        <div class="service-card">
-            <h3>Data Infrastructure Audit</h3>
-            <p>Deep-dive review of your cloud data footprint to isolate performance bottlenecks and structural architectural flaws.</p>
-        </div>
-        <div class="service-card">
-            <h3>Cost Optimization</h3>
-            <p>Stop overpaying for compute. I help configure smart indexing, partitioning, and warehousing structures to cut your bills down drastically.</p>
-        </div>
-        <div class="service-card">
-            <h3>Custom ETL/ELT Design</h3>
-            <p>End-to-end design of tailored pipelines ensuring high data quality, seamless governance, and clean schema registries.</p>
+            <p> upcoming </p>
         </div>
     </div>
 </section>
@@ -147,31 +174,87 @@
 <section id="contact" class="container contact-section">
     <h2 class="section-title">Let's Build Something Together</h2>
     <p>Looking for a reliable contractor, or have a critical engineering vacancy to fill? Reach out below.</p>
-
-    <form id="contact-form" action="#" method="POST" class="contact-form">
+    <form id="contact-form" action="https://formspree.io/f/mojooddv" method="POST" class="contact-form">
         <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
+            <label for="name" class="sr-only">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
         </div>
         <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email Address" required>
+            <label for="email" class="sr-only">Your Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
         </div>
         <div class="form-group">
-            <textarea name="message" rows="5" placeholder="Tell me about your project needs..." required></textarea>
+            <label for="message" class="sr-only">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project needs..." required></textarea>
         </div>
         <button type="submit" class="btn primary-btn">Send Message</button>
     </form>
-
     <div class="social-links">
         <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:asangikak@outlook.com"><i class="fas fa-envelope"></i></a>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 DataCraft Consulting. All rights reserved.</p>
+    <p>&copy; 2026 SyntaxQ Consulting. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
+<!--    </div>-->
+<!--    </div>-->
+
+<!--        <div class="card">-->
+<!--            <div class="card-icon"><i class="fas fa-network-wired"></i></div>-->
+<!--            <h3>Real-time Streaming Pipeline</h3>-->
+<!--            <p>Built a real-time event ingestion pipeline processing 10k+ events/sec using Kafka, Spark Streaming, and Delta Lake.</p>-->
+<!--            <div class="tags">-->
+<!--                <span>Kafka</span><span>Spark</span><span>AWS</span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="card">-->
+<!--            <div class="card-icon"><i class="fas fa-database"></i></div>-->
+<!--            <h3>Enterprise Data Warehouse Migration</h3>-->
+<!--            <p>Migrated legacy on-premise SQL servers to Snowflake, rewriting 200+ ETL workflows using dbt and Airflow.</p>-->
+<!--            <div class="tags">-->
+<!--                <span>Snowflake</span><span>dbt</span><span>Airflow</span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="card">-->
+<!--            <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>-->
+<!--            <h3>Cloud FinOps Optimization Engine</h3>-->
+<!--            <p>Engineered automated resource-tagging and idle-resource shutdown scripts saving 32% on monthly BigQuery spend.</p>-->
+<!--            <div class="tags">-->
+<!--                <span>GCP</span><span>BigQuery</span><span>Python</span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="case-card">-->
+<!--            <div class="case-meta">E-Commerce Architecture Scaled up to 5x Load</div>-->
+<!--            <h3>Overhauling Data Pipelines for Peak Holiday Traffic</h3>-->
+<!--            <p><strong>The Challenge:</strong> A major retailer's legacy analytical server crashed repeatedly during high-traffic sales events, dropping vital conversion metrics.</p>-->
+<!--            <p><strong>The Solution:</strong> Implemented decoupled storage and compute scaling via a lakehouse architecture. Replaced batch syncs with incremental micro-batches.</p>-->
+<!--            <p><strong>The Result:</strong> Zero downtime during Black Friday, and analytical reporting latency dropped from 12 hours to less than 15 minutes.</p>-->
+<!--        </div>-->
+
+
+<!--    <h2 class="section-title">Consulting Services</h2>-->
+<!--    <div class="grid-3">-->
+<!--        <div class="service-card">-->
+<!--            <h3>Data Infrastructure Audit</h3>-->
+<!--            <p>Deep-dive review of your cloud data footprint to isolate performance bottlenecks and structural architectural flaws.</p>-->
+<!--        </div>-->
+<!--        <div class="service-card">-->
+<!--            <h3>Cost Optimization</h3>-->
+<!--            <p>Stop overpaying for compute. I help configure smart indexing, partitioning, and warehousing structures to cut your bills down drastically.</p>-->
+<!--        </div>-->
+<!--        <div class="service-card">-->
+<!--            <h3>Custom ETL/ELT Design</h3>-->
+<!--            <p>End-to-end design of tailored pipelines ensuring high data quality, seamless governance, and clean schema registries.</p>-->
+<!--        </div>-->
+<!--    </div>-->
