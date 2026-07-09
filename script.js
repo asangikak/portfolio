@@ -60,12 +60,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- Basic Interactive Interception for Contact Form Placeholder ---
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (e) => {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        // This is where you can hook your real submission framework (like Netlify, Formspree, etc.)
-        alert('Thank you for reaching out! Since this is a static placeholder, your message wasn\'t actually routed. Connect with me directly via the LinkedIn or email links below!');
-        contactForm.reset();
+        const data = new FormData(form);
+
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        if (response.ok) {
+            alert("Thanks! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
     });
+    // const contactForm = document.getElementById('contact-form');
+    // contactForm.addEventListener('submit', (e) => {
+    //     // e.preventDefault();
+    //
+    //     // This is where you can hook your real submission framework (like Netlify, Formspree, etc.)
+    //     // alert('Thank you for reaching out! Since this is a static placeholder, your message wasn\'t actually routed. Connect with me directly via the LinkedIn or email links below!');
+    //     contactForm.reset();
+    // });
 });
